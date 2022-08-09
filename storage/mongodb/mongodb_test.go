@@ -7,7 +7,7 @@ package mongodb
 import (
 	"testing"
 
-	storageTesting "github.com/tsuru/docker-cluster/storage/testing"
+	storageTesting "github.com/fuguohong1024/docker-cluster/storage/testing"
 )
 
 func TestMongodbStorage(t *testing.T) {

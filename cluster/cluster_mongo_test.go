@@ -7,9 +7,9 @@ package cluster_test
 import (
 	"testing"
 
-	"github.com/tsuru/docker-cluster/cluster"
-	"github.com/tsuru/docker-cluster/storage"
-	"github.com/tsuru/docker-cluster/storage/mongodb"
+	"github.com/fuguohong1024/docker-cluster/cluster"
+	"github.com/fuguohong1024/docker-cluster/storage"
+	"github.com/fuguohong1024/docker-cluster/storage/mongodb"
 )
 
 func TestUpdateNodeDoesNotExist(t *testing.T) {

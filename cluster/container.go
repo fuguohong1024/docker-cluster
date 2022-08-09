@@ -14,7 +14,7 @@ import (
 	"time"
 
 	"github.com/fsouza/go-dockerclient"
-	"github.com/tsuru/docker-cluster/log"
+	"github.com/fuguohong1024/docker-cluster/log"
 )
 
 type Container struct {

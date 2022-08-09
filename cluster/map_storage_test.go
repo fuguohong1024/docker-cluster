@@ -7,8 +7,8 @@ package cluster_test
 import (
 	"testing"
 
-	"github.com/tsuru/docker-cluster/cluster"
-	storageTesting "github.com/tsuru/docker-cluster/storage/testing"
+	"github.com/fuguohong1024/docker-cluster/cluster"
+	storageTesting "github.com/fuguohong1024/docker-cluster/storage/testing"
 )
 
 func TestMapStorageStorage(t *testing.T) {

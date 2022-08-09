@@ -21,9 +21,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/fsouza/go-dockerclient"
+	docker "github.com/fsouza/go-dockerclient"
 	"github.com/fsouza/go-dockerclient/testing"
-	"github.com/tsuru/docker-cluster/log"
+	"github.com/fuguohong1024/docker-cluster/log"
 )
 
 var (
@@ -119,9 +119,9 @@ type Cluster struct {
 	scheduler      Scheduler
 	stor           Storage
 	monitoringDone chan bool
-	dryServer      *testing.DockerServer
-	hooks          map[HookEvent][]Hook
-	tlsConfig      *tls.Config
+	//dryServer      *testing.DockerServer
+	hooks     map[HookEvent][]Hook
+	tlsConfig *tls.Config
 }
 
 type DockerNodeError struct {

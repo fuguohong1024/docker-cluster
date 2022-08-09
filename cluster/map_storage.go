@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tsuru/docker-cluster/storage"
+	"github.com/fuguohong1024/docker-cluster/storage"
 )
 
 type MapStorage struct {

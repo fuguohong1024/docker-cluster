@@ -21,7 +21,7 @@ import (
 
 	"github.com/fsouza/go-dockerclient"
 	dtesting "github.com/fsouza/go-dockerclient/testing"
-	cstorage "github.com/tsuru/docker-cluster/storage"
+	cstorage "github.com/fuguohong1024/docker-cluster/storage"
 	"github.com/tsuru/tsuru/safe"
 )
 

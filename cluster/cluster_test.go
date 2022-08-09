@@ -20,7 +20,7 @@ import (
 	"time"
 
 	"github.com/fsouza/go-dockerclient"
-	"github.com/tsuru/docker-cluster/storage"
+	"github.com/fuguohong1024/docker-cluster/storage"
 )
 
 func TestNewCluster(t *testing.T) {

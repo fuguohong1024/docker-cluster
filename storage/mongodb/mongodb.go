@@ -7,10 +7,10 @@ package mongodb
 import (
 	"time"
 
+	"github.com/fuguohong1024/docker-cluster/cluster"
+	"github.com/fuguohong1024/docker-cluster/storage"
 	"github.com/globalsign/mgo"
 	"github.com/globalsign/mgo/bson"
-	"github.com/tsuru/docker-cluster/cluster"
-	"github.com/tsuru/docker-cluster/storage"
 )
 
 type mongodbStorage struct {
@@ -138,7 +138,7 @@ func (s *mongodbStorage) LockNodeForHealing(address string, isFailure bool, time
 			return false, nil
 		}
 		err = coll.Update(bson.M{
-			"_id": address,
+			"_id":                 address,
 			"healing.lockeduntil": dbNode.Healing.LockedUntil,
 		}, setOperation)
 		if err == mgo.ErrNotFound {
